@@ -18,13 +18,28 @@ const kagouList = ref([
     color: "red"
   },
   {
+    name: "你拦不住全闪的我",
+    type: "卡在线",
+    color: "red"
+  },
+  {
+    name: "夕颜",
+    type: "卡在线",
+    color: "red"
+  },
+  {
+    name: "无敌暴龙战士",
+    type: "加速狗",
+    color: "red"
+  },
+  {
     name: "海岛单机模式已开启",
     type: "加速狗",
     color: "purple"
   },
   {
     name: "刘：888",
-    type: "卡在线",
+    type: "加速狗 卡在线",
     color: "red"
   },
   {
