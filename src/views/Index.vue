@@ -120,7 +120,7 @@ const options =  {
 <style scoped>
 .alert-top {
   margin-top: 5px;
-  background-image: url('../../public/card-bg.png');
+  background-image: url('../assets/card-bg.png');
   background-size: 100% auto; /* 宽度自动调整以保持比例，高度设置为容器高度的100% */
   background-position: right center; /* 背景图片右对齐且垂直居中 */
   background-repeat: no-repeat;
