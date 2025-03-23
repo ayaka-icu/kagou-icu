@@ -30,7 +30,7 @@ const kagouList = ref([
   {
     name: "无敌暴龙战士",
     type: "加速狗",
-    color: "red"
+    color: "purple"
   },
   {
     name: "海岛单机模式已开启",
@@ -40,7 +40,7 @@ const kagouList = ref([
   {
     name: "刘：888",
     type: "加速狗 卡在线",
-    color: "red"
+    color: "purple"
   },
   {
     name: "白马🧡烟雨蒙蒙",
