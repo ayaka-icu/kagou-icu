@@ -156,7 +156,7 @@ export const LegendList = [
         url: ''
     },
     {
-        name: '飞雪遥遍天',
+        name: '飞雪遍遥天',
         isDeath: true,
         remark: '',
         url: ''
