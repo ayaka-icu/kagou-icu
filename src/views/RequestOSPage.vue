@@ -39,7 +39,7 @@ const goKagouList = () => {
         <a-collapse-item header="# 每周末预告下周原型武器" key="3">
           <div>提前预告下周原型武器，指挥官可以更好的策划防御黑暗卫队的入侵！</div>
         </a-collapse-item>
-        <a-collapse-item header="# 为那些至死不渝的指挥官们献上祝福" key="3">
+        <a-collapse-item header="# 为那些至死不渝的指挥官们献上祝福" key="4">
           <template #header>
             # 为那些<span style="color: #FFD700">至死不渝</span>的指挥官们献上祝福
           </template>

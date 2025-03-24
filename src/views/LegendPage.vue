@@ -1,20 +1,21 @@
 <script setup>
-import {ref} from "vue";
+import {computed, ref} from "vue";
+import {LegendList} from "@/data/LegendList.js";
+import {copyToClipboard} from "@/utils/CopyUtils.js";
 
-const legendList = ref([
-    '心动给予晚霞✨',
-    '我的名字',
-    '子龙无我',
-    '绫华🌸网站kagou.icu',
-    'Technology',
-    '灵脉佳音🌠凝瑞气👑定山海',
-    '少年何妨梦摘星，敢挽槡弓射玉衡',
-    '一七🧡东军🌇',
-    'Kasugano Sora',
-    'CUHK理塘丁真',
-    '小熊猫',
-    '......'
-])
+const legendList = ref(LegendList)
+let legendListNoDeath;
+const isShowDeath = ref(true)
+const changeIsShowDeath = (isShow) => {
+  if (isShow) {
+    legendList.value = LegendList;
+  }else if (legendListNoDeath) {
+    legendList.value = legendListNoDeath
+  }else {
+    legendListNoDeath = LegendList.filter(item => !item.isDeath)
+    legendList.value = legendListNoDeath
+  }
+}
 </script>
 
 <template>
@@ -31,25 +32,34 @@ const legendList = ref([
     <div>
       <a-list>
         <template #header>
-          <div style="width: 100%;height: 30px;">
-            绿玩榜
+          <div style="width: 100%;height: 30px;display: flex;">
+            <div style="justify-content: flex-start;display: flex;align-items: center;">
+              绿玩榜
+            </div>
+            <div style="flex:1;justify-content: flex-end;display: flex;align-items: center;">
+              <a-switch type="round" @change="changeIsShowDeath" v-model="isShowDeath" style="width: 58px" size="medium" checked-color="#F76560FF"/>
+            </div>
           </div>
         </template>
-        <a-list-item v-for="(item, index) in legendList" :key="index">
-          <div style="display: flex">
-            <div class="item-left">
-              {{index+1}}. {{item}}
+
+        <template v-for="(item, index) in legendList" :key="index">
+          <a-list-item v-show="isShowDeath || (!isShowDeath && !item.isDeath)">
+            <div style="display: flex">
+              <div class="item-left">
+                {{index+1}}. {{item.name}}
+              </div>
+              <div class="item-right" v-if="item.isDeath">
+                <a-tag checkable :color="item.color??'red'" :default-checked="true" size="large">
+                  已死号
+                </a-tag>
+              </div>
             </div>
-<!--            <div class="item-right">
-              <a-tag checkable :color="item.color??'red'" :default-checked="true" size="large">
-                🐕{{item.type}}
-              </a-tag>
-            </div>-->
-          </div>
-        </a-list-item>
+          </a-list-item>
+        </template>
+
         <a-list-item>
           <div style="float: right">
-            更多请联系QQ群: 555080859
+            更多请联系QQ群: <a-link @click="copyToClipboard('555080859')">555080859</a-link>
           </div>
         </a-list-item>
       </a-list>

@@ -1,5 +1,6 @@
 <script setup>
 import {ref} from "vue";
+import {copyToClipboard} from "@/utils/CopyUtils.js";
 
 const chatList = ref([
   {
@@ -48,10 +49,6 @@ const chatList = ref([
     chat: "🍥 游戏，还是要可乐的好~",
     bgColor: "rgb(232, 243, 255)"
   },
-  {
-    chat: "🐧 换进加入QQ群：555080859 ~",
-    bgColor: "rgb(232, 243, 255)"
-  },
 ])
 </script>
 
@@ -66,6 +63,16 @@ const chatList = ref([
       <a-link v-if="item?.linkTitle" :href="item.linkUrl">{{item.linkTitle}}</a-link>
       </div>
     </a-card>
+
+    <a-card hoverable :style="{ marginBottom: '10px', backgroundColor: 'rgb(232, 243, 255)' }">
+      <div :style="{ display: 'flex', alignItems: 'center',justifyContent: 'space-between'}">
+      <span :style="{ display: 'flex', alignItems: 'center', color: '#1D2129' }">
+        <a-typography-text>🐧 换进加入QQ群：555080859 ~</a-typography-text>
+      </span>
+        <a-link @click="copyToClipboard('555080859')">Copy</a-link>
+      </div>
+    </a-card>
+
     <a-card hoverable :style="{ marginBottom: '10px', backgroundColor: 'rgb(232, 243, 255)' }">
       <div :style="{ display: 'flex', alignItems: 'center',justifyContent: 'space-between'}">
       <span :style="{ display: 'flex', alignItems: 'center', color: '#1D2129' }">
