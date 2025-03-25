@@ -1,11 +1,11 @@
 export const KagouList = [
     {
-        name: "凌晨",
+        name: "传奇左左☘️❤️王者岳岳",
         type: "卡玩家",
         color: "arcoblue",
     },
     {
-        name: "金元宝银冬瓜✨招財進寳",
+        name: "wtt2Wa",
         type: "卡玩家",
         color: "arcoblue"
     },
