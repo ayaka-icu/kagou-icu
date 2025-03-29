@@ -7,8 +7,7 @@ export const KagouList = [
             role_id: "9-23677039",
             role_name : "传奇左左☘️❤️王者岳岳",
         },
-        p_names: ["金元宝银冬瓜✨招財進寳"],
-        color: "arcoblue",
+        p_names: ["金元宝银冬瓜✨招財進寳"]
     },
     {
         name: "wtt2Wa",
@@ -18,8 +17,7 @@ export const KagouList = [
             role_id: "3-14562557",
             role_name : "wtt2Wa",
         },
-        p_names: ["凌晨", "满堂花醉三干客，一创霜寒十四洲"],
-        color: "arcoblue"
+        p_names: ["凌晨", "满堂花醉三干客，一创霜寒十四洲"]
     },
     {
         name: "传奇左左☘️❤️帅气岳岳",
@@ -29,8 +27,7 @@ export const KagouList = [
             role_id: "16-19797938",
             role_name : "",
         },
-        p_names: ["九仙霸主"],
-        color: "red"
+        p_names: ["九仙霸主"]
     },
     {
         name: "你拦不住全闪的我",
@@ -39,8 +36,7 @@ export const KagouList = [
             user_id: "CAA2CF295534A685BC624AF9244E02A9",
             role_id: "7-19531497",
             role_name : "",
-        },
-        color: "red"
+        }
     },
     {
         name: "夕颜",
@@ -49,8 +45,7 @@ export const KagouList = [
             user_id: "",
             role_id: "",
             role_name : "",
-        },
-        color: "red"
+        }
     },
     {
         name: "无敌暴龙战士",
@@ -59,8 +54,7 @@ export const KagouList = [
             user_id: "",
             role_id: "",
             role_name : "",
-        },
-        color: "purple"
+        }
     },
     {
         name: "海岛单机模式已开启",
@@ -69,8 +63,7 @@ export const KagouList = [
             user_id: "0435A12EDCC302CBF608F416D705D673",
             role_id: "14-17420601",
             role_name : "海岛单机模式已开启",
-        },
-        color: "purple"
+        }
     },
     {
         name: "刘：888",
@@ -89,8 +82,7 @@ export const KagouList = [
             user_id: "",
             role_id: "",
             role_name : "",
-        },
-        color: "red"
+        }
     },
     {
         name: '春风暖，梨花开',
@@ -99,7 +91,6 @@ export const KagouList = [
             user_id: "",
             role_id: "",
             role_name : "",
-        },
-        color: "red"
+        }
     },
 ]

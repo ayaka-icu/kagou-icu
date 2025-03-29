@@ -48,6 +48,12 @@ export const LegendList = [
         url: ''
     },
     {
+        name: 'Red Lotus Lord',
+        isDeath: false,
+        remark: '',
+        url: ''
+    },
+    {
         name: 'Technology',
         isDeath: false,
         remark: '',
@@ -67,7 +73,7 @@ export const LegendList = [
     },
     {
         name: '提瓦特大陆-旅行者',
-        isDeath: true,
+        isDeath: false,
         remark: '',
         url: ''
     },
