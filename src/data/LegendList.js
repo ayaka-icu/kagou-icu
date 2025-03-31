@@ -96,7 +96,7 @@ export const LegendList = [
         url: ''
     },
     {
-        name: '一七🧡东君🌇',
+        name: '一七❤️东君🌇',
         isDeath: true,
         remark: '',
         url: ''

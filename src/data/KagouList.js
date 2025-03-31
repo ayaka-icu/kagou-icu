@@ -39,13 +39,15 @@ export const KagouList = [
         }
     },
     {
-        name: "夕颜",
+        name: "*放屁带点汁*",
         type: ["卡在线"],
         tx_info: {
-            user_id: "",
-            role_id: "",
-            role_name : "",
-        }
+            user_id: "DEF69CF1B0C76F34AC7359B0132F5582",
+            role_id: "5-7008300",
+            role_name : "*放屁带点汁*",
+        },
+        p_names: ["夕颜"],
+        remark: "前夕颜卖号，需要回调他的杯数"
     },
     {
         name: "无敌暴龙战士",
@@ -76,7 +78,7 @@ export const KagouList = [
         color: "purple"
     },
     {
-        name: "白马🧡烟雨蒙蒙",
+        name: "白马❤️烟雨蒙蒙",
         type: ["卡在线"],
         tx_info: {
             user_id: "",
@@ -91,6 +93,24 @@ export const KagouList = [
             user_id: "",
             role_id: "",
             role_name : "",
+        }
+    },
+    {
+        name: '白马❤️青衫少年郎✨前来打榜✨',
+        type: ["卡在线"],
+        tx_info: {
+            user_id: "945F0341B68ACF1E1952F151F7C2634D",
+            role_id: "1-4292620",
+            role_name : "白马❤️青衫少年郎✨前来打榜✨",
+        }
+    },
+    {
+        name: '抖音灰机✈️下线不可能',
+        type: ["卡在线"],
+        tx_info: {
+            user_id: "25D5C9159F8BD1970D2E9BA3B19234F2",
+            role_id: "16-23916286",
+            role_name : "抖音灰机✈️下线不可能",
         }
     },
 ]

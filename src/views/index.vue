@@ -24,13 +24,15 @@
 
 </template>
 <script setup>
-import {ref} from "vue"
+import {ref, h} from "vue"
 import PageHead from "@/layout/PageHead.vue";
 import KagouPage from "@/views/KagouPage.vue";
 import StickToPage from "@/views/LegendPage.vue";
 import RequestOSPage from "@/views/RequestOSPage.vue";
 import ChatPage from "@/views/ChatPage.vue";
 import FloatingSettingButton from "@/components/FloatingSettingButton.vue";
+import {Message} from "@arco-design/web-vue";
+import { IconCommand } from '@arco-design/web-vue/es/icon';
 
 const pageHeadRef = ref();
 
@@ -50,7 +52,12 @@ const sakuraBg = () => {
   console.log("...")
   isSakuraBg.value = !isSakuraBg.value;
 }
-
+Message.success({
+  content: '不管结果如何，总要有人发声吧 ~',
+  icon: () => h(IconCommand),
+  duration: 3800,
+  closable: true
+})
 //配置particles
 const options =  {
   fullScreen: {
